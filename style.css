@@ -1,0 +1,26 @@
+.titulo-gradiente {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 100px;
+
+  background: linear-gradient(90deg, #ff00c3, #0066ff, #00ff9d);
+  background-size: 300% 300%;
+
+  -webkit-background-clip: text;
+  color: transparent;
+
+  animation: moverGradiente 4s ease infinite;
+}
+
+@keyframes moverGradiente {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
